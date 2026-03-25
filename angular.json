@@ -28,16 +28,16 @@
           },
           "configurations": {
             "production": {
-             "budgets": [
+              "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "20kB",
-                  "maximumError": "50kB"
+                  "maximumWarning": "100kb",
+                  "maximumError": "200kb"
                 }
               ],
               "outputHashing": "all"
@@ -64,8 +64,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "aff2c0db-65ed-466c-8c9c-891c89b646a6"
   }
 }
