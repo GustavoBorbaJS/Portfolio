@@ -112,7 +112,7 @@ html {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .nav-links a {
@@ -196,6 +196,39 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
+.certific-content ul {
+  list-style: none;       /* remove as bolinhas */
+  padding: 0;
+  margin: 0;
+  display: flex;          /* coloca os itens lado a lado */
+  justify-content: center;/* centraliza horizontalmente */
+  gap: 1.5rem;            /* espaço entre os itens */
+  flex-wrap: wrap;        /* permite quebrar linha em telas menores */
+}
+
+.certific-content li {
+  display: flex;          /* mantém cada item flexível */
+  justify-content: center;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+  .certific-content {
+    padding: 0 15px;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 480px) {
+  .certific-content {
+    padding: 0 10px;
+    margin-bottom: 2rem;
+    text-align: left; /* melhora leitura em telas pequenas */
+  }
+}
+
 
 /* Gradient Text */
 .gradient-text {
@@ -379,6 +412,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding-top: 5%;
 }
 
 .form-input {
@@ -775,3 +809,4 @@ html {
     padding: 2rem 5%;
   }
 }
+

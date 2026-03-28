@@ -8,6 +8,7 @@
       <a href="#features">Recursos</a>
       <a href="#about">Sobre</a>
       <a href="#contact">Contato</a>
+      <a href="#certific">Certificados</a>
     </div>
     <button class="theme-toggle" (click)="toggleTheme()">
       <i
@@ -30,9 +31,10 @@
 
         <h1 class="gradient-text">Portfólio Digital</h1>
         <p class="hero-description">
-          Bem-vindo ao meu portfólio digital! <br> Aqui você encontrará algumas de
-          minhas experiências e projetos mais recentes, mostrando minhas
-          habilidades e paixão por tecnologia. Sinta-se à vontade para explorar
+          Bem-vindo ao meu portfólio digital! <br />
+          Aqui você encontrará algumas de minhas experiências e projetos mais
+          recentes, mostrando minhas habilidades e paixão por tecnologia.
+          Sinta-se à vontade para explorar
         </p>
         <div class="hero-buttons">
           <button
@@ -65,7 +67,7 @@
 
     <!-- Features Section -->
     <section id="features" class="features">
-      <h2 class="section-title">Prezo pela: </h2>
+      <h2 class="section-title">Prezo pela:</h2>
       <div class="features-grid">
         <div class="feature-card" *ngFor="let feature of features">
           <div class="feature-icon">
@@ -78,35 +80,91 @@
     </section>
 
     <!-- About Section -->
- <section id="about" class="about">
-  <div class="about-content">
-    <h2>Sobre Mim</h2>
-    <p>
-      Sigo os fundamentos de Clean Code, .NET e desenvolvimento web moderno para criar soluções eficientes e escaláveis. Com uma paixão por tecnologia e inovação, estou sempre buscando aprender e crescer como desenvolvedor. Meu objetivo é entregar projetos de alta qualidade que atendam às necessidades dos clientes e proporcionem uma excelente experiência ao usuário.
-    </p>
-  </div>
-  <div class="about-image">
-    <img src="assets/place1.jpg" alt="Sobre mim" class="place-img">
-  </div>
-</section>
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sigo os fundamentos de Clean Code, .NET e desenvolvimento web moderno
+          para criar soluções eficientes e escaláveis. Com uma paixão por
+          tecnologia e inovação, estou sempre buscando aprender e crescer como
+          desenvolvedor. Meu objetivo é entregar projetos de alta qualidade que
+          atendam às necessidades dos clientes e proporcionem uma excelente
+          experiência ao usuário.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/place1.jpg" alt="Sobre mim" class="place-img" />
+      </div>
+    </section>
 
-    <!-- Contact Section -->
- <form class="contact-form" action="https://formspree.io/f/meepjlja" method="POST">
-  <input type="text" name="nome" placeholder="Seu Nome" class="form-input" required>
-  <input type="email" name="email" placeholder="Seu E-mail" class="form-input" required>
-  <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" class="form-input" required></textarea>
-  <input type="hidden" name="_subject" value="Novo contato do Portfólio!">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <button type="submit" class="btn-primary">Enviar Mensagem</button>
-</form>
+    <section id="certific" class="certific">
+
+       <div class="certific-content">
+         <div class="profile-image-container">
+
+          <ul>
+            <li><img src="assets/cursoemvideo.jpeg" alt="Certificado 1" id="1" class="profile-image"/></li>
+            <li><img src="assets/diploma.jpg" alt="Certificado 2" id="2" class="profile-image"/></li>
+            <li><img src="assets/Angular18.jpg" alt="Certificado 3" id="3" class="profile-image"/></li>
+          </ul>
+
+          <h3 class="profile-name">Certificados/Diplomas</h3>
+
+            <span class="certific-description">
+              Aqui estão alguns dos meus certificados mais recentes, que
+              demonstram meu compromisso com o aprendizado contínuo e a
+              excelência em desenvolvimento de software.
+            </span>
+
+         </div>
+       </div>
+       
+    </section>
+
+    
+
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/meepjlja"
+      method="POST"
+    > <h3 class="contact-form" style="align-items: center;font-size: 28px;">Deixe sua mensagem!</h3>
+      <input
+        type="text"
+        name="nome"
+        placeholder="Seu Nome"
+        class="form-input"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Seu E-mail"
+        class="form-input"
+        required
+      />
+      <textarea
+        name="mensagem"
+        placeholder="Sua Mensagem"
+        rows="5"
+        class="form-input"
+        required
+      ></textarea>
+      <input type="hidden" name="_subject" value="Novo contato do Portfólio!" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <button type="submit" class="btn-primary">Enviar Mensagem</button>
+    </form>
   </main>
 
   <footer class="footer">
     <p>&copy; 2026 TechBorba. Todos os direitos reservados.</p>
     <div class="social-links">
-      <a href="https://github.com/GustavoBorbaJS"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/gustavo-da-silva-borba-3219471bb/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/GustavoBorbaJS"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/gustavo-da-silva-borba-3219471bb/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
     </div>
   </footer>
 </div>
